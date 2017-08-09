@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Pratteln Parking</string>
+    <string name="content_description">Content description</string>
+    <string name="lang">DE</string>
+    <string name="back">Zurück</string>
+    <string name="edit">bearbeiten</string>
+    <string name="action_settings">eingeben</string>
+    <string name="action_payment">Zahlung</string>
+    <string name="location_settings">Einstellungen</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="cancel">Abbrechen </string>
+    <string name="add">Hinzufügen </string>
+    <string name="retry">Wiederholen </string>
+    <string name="done">Erledigt </string>
+    <string name="my_profile">Mein Profile</string>
+    <string name="my_cars">Meine Autos</string>
+    <string name="car">Kennzeichen:</string>
+    <string name="add_car"> Neues Fahrzeug hinzufügen.</string>
+    <string name="existing_user">Existierender</string>
+    <string name="create_profile">Profil eröffnen</string>
+    <string name="history">Historie</string>
+    <string name="terms_short">AGB</string>
+    <string name="edit_profile">Profil bearbeiten:</string>
+    <string name="first_name">Vorname</string>
+    <string name="last_name">Name</string>
+    <string name="email">Mail</string>
+    <string name="please_complete">Bitte füllen Sie alle Felder korrekt aus.</string>
+    <string name="saved_profile">Update des Profils erfolgreich.</string>
+    <string name="history_subheader">Wählen Sie die Parkzeit von der Liste aus, um Ihre Rechnung per E-Mail zu erhalten</string>
+    <string name="from">von</string>
+    <string name="to">bis</string>
+    <string name="date">Datum</string>
+    <string name="send">Senden</string>
+    <string name="wrong_email">falsche E-Mail Adresse</string>
+    <string name="please_check">Bitte überprüfen Sie Ihre Eingaben und versuchen Sie es erneut. Die E-Mail Adresse existiert bereits.</string>
+    <string name="recover">Aktualisieren</string>
+    <string name="my_parked_cars">Meinem geparkten Autos</string>
+    <string name="email_et">Email: </string>
+    <string name="recover_account">Konto wiederherstellen</string>
+    <string name="load_more">mehr laden</string>
+    <string name="no_invoices">Keine Rechnungen ausgewählt</string>
+    <string name="invoice_request">Rechnung angefordert</string>
+    <string name="invoice_error">Fehler bei der Anforderung der Rechnung</string>
+    <string name="select_from_time">Bitte wählen Sie eine Parkzeit aus!</string>
+    <string name="yes">Ja </string>
+    <string name="location">Platz </string>
+    <string name="main_location_sub_header_hint">Platz</string>
+    <string name="location_header">Standortnummer</string>
+    <string name="onlyspots"></string>
+    <string name="spots">parkplätze sind zur verfügung</string>
+    <string name="switzerland"></string>
+    <string name="munster">Pratteln Parking</string>
+    <string name="splash_screen_loading_text">Laden&#8230;</string>
+    <string name="no_internet_connection_title">Internetverbindung</string>
+    <string name="no_internet_connection_body">Stellen Sie sicher, dass Sie mit dem Internet verbunden sind.</string>
+    <string name="server_offline_title">Internetverbindung.</string>
+    <string name="server_offline_body">Es scheint ein Verbindungsproblem mit dem Server zu geben.</string>
+    <string name="parse_error_title">Internetverbindung</string>
+    <string name="parse_error_body">Es besteht anscheinend keine Verbindung zum Internet.</string>
+    <string name="close_app_title">Exit</string>
+    <string name="close_app_body">Sind Sie sicher, dass Sie schließen wollen?</string>
+    <string name="close_app_body2">Wenn Sie einen neuen Parkvorgang starten, wird Ihre restliche Parkzeit verfallen. Möchten Sie fortfahren?</string>
+    <string name="main_validation_spot_fail_title">Parking spot error</string>
+    <string name="main_validation_spot_fail_body">Please select a parking spot</string>
+    <string name="main_validation_parking_time_title">Parkzeit fehler</string>
+    <string name="main_validation_parking_time_body">Die Parkzeit sollte mindestens 1 Uhr sein</string>
+    <string name="main_validation_parking_time_body2">Die Parkzeit kann nur in 1 Uhr Schritten gebucht werden.</string>
+    <string name="main_validation_parking_time_body_spot">Bitte geben Sie das KFZ-Kennzeichen ein.</string>
+    <string name="main_validation_parking_time_body_between">Steuer ist zwischen 6.00 Uhr bis 20.00 Uhr</string>
+    <string name="title_bar_back">Zurück</string>
+    <string name="main_start_parking">Bezahlen</string>
+    <string name="time_extend_time">Parkdauer verlängern</string>
+    <string name="time_new_parking">Bezahlen</string>
+    <string name="time_new_parking_save">speichern</string>
+    <string name="remaining_time">verbleibende Parkzeit</string>
+    <string name="main_free_parking">30 Min. kostenlos</string>
+    <string name="reminder">Erinnerung</string>
+    <string name="reminder2">Keine </string>
+    <string name="reminder_info_begin">Erinnerung:</string>
+    <string name="reminder_info_middle">Minutengenau </string>
+    <string name="reminder_info_end">Sie erhalten eine Erinnerung vor Ablauf der Parkzeit.</string>
+    <string name="terms_conditions">Allgemeine Geschäftsbedingungen</string>
+    <string name="reminder_set_to">Erinnerung</string>
+    <string name="set">gesetzt</string>
+    <string name="min">min</string>
+    <string name="min2">Minuten vor Ablauf</string>
+    <string name="not2">Minutengenau </string>
+    <string name="spot_header">Kontrollschild</string>
+    <string name="parking_header">Parkdauer</string>
+    <string name="main_spot_sub_header">volständig eingeben inkl. Kürzel Kanton</string>
+    <string name="main_parking_sub_header">Parkdauer wählen</string>
+    <string name="main_cost_header">Parkgebühr</string>
+    <string name="main_cost_sub_header">Gebühren </string>
+    <string name="select_from_cars_list">Bitte Kennzeichen auswählen</string>
+    <string name="CNP">Autokennzeichen</string>
+    <string name="plus"> + </string>
+    <string name="main_location_sub_header">Nummer bei Signaltafel</string>
+    <string name="main_footer_extend_parking">Parkdauer verlängern</string>
+    <string name="main_parking_time_hour_unit">std</string>
+    <string name="main_parking_time_minute_unit">min</string>
+    <string name="select_time">Parkdauer eingeben</string>
+    <string name="select_a_car">Bitte Fahrzeug zur Anzeige der Restzeit auswählen</string>
+    <string name="add_first_car_notif"> + zum hinzufügen eines Fahrzeuges  </string>
+    <string name="main_spot_sub_header_hint">Fahrzeug hinzufügen</string>
+    <string name="parked"> | In Benutzung: </string>
+    <string name="finished"> Parkzeit abgelaufen </string>
+    <string name="trans_suc"> Zahlung erfolgreich </string>
+    <string name="must_create_profile">  Sie müssen ein Profil anlegen, bevor Sie eine Rechnung anfordern können. </string>
+    <string name="cnp_exists">  Kennzeichen schon vorhanden </string>
+    <string name="firstname_null">Bitte tragen Sie einen Vornamen ein.  </string>
+    <string name="lastname_null"> Bitte tragen Sie einen Nachnamen  ein. </string>
+    <string name="email_null"> Bitte tragen Sie eine E-Mail Adresse ein. </string>
+    <string name="email_invalid"> Ungültige E-Mail Adresse. </string>
+    <string name="free_time"> Parkzeit ohne Gebühr: </string>
+    <string name="free_parking"> Parken ohne Gebühr ab </string>
+    <string name="instructions"> Anweisungen </string>
+    <string name="show_help"> Das Tutorial wird beim nächsten Start der App gezeigt! </string>
+    <string name="extended_until_parking">Zeit verlängert bis Parköffnungszeiten : </string>
+    <string name="terms_conditions_info"><Data>
+<![CDATA[<br>Geb&#252;hrenpflicht gem&#228ss Standort: Die bezahlte Parkgeb&#252;hr hat nur G&#252;ltigkeit
+	auf dem eingegebenen Standort.<br>
+	<br>
+	30 Minuten kostenlos pro Tag/Standort<br>
+	Die maximale Parkzeit darf nicht &#252;berschritten werden.]]>
+</Data></string>
+    <string name="location_picker_done_text">Fertig</string>
+    <string name="loader_payment_ok">Zahlung OK</string>
+    <string name="picker_all_day">ganzen Tag</string>
+    <string name="freetime_used">Freiparkzeit nicht verfügbar!</string>
+    <string name="confirm_new_parking_title">Hinweis</string>
+    <string name="confirm_new_parking_description">Das ausgewählte Autokennzeichen wird benutzt. Wollen Sie einen neuen Vorgang starten? </string>
+    <string name="confirm_new_parking_positive">Ja</string>
+    <string name="confirm_new_parking_negavive">Nein</string>
+    <string name="invoices_free_parking">kostenlos</string>
+
+    <string name="computed_time_limit_title">Parken zeitlich begrenzt!</string>
+    <string name="computed_time_limit_message">Ihre Parkzeitlimit ist %1$s Uhr</string>
+
+    <string name="free_parking_duration_in_minutes_toast">zzgl. %1$s min kostenlos</string>
+
+    <string name="load_more_info">laden mehr</string>
+
+</resources>

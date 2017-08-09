@@ -1,0 +1,27 @@
+package com.cityparking.pratteln.activities;
+
+import android.graphics.drawable.Drawable;
+import android.text.TextPaint;
+import android.util.TypedValue;
+
+import com.cityparking.pratteln.R;
+import com.octo.android.robodemo.DefaultDrawViewAdapter;
+import com.octo.android.robodemo.DemoActivity;
+import com.octo.android.robodemo.DrawViewAdapter;
+
+public class ActivityHelpOverlay extends DemoActivity {
+
+	private static final int DEFAULT_FONT_SIZE = 16;
+
+	@Override
+	public DrawViewAdapter getDrawViewAdapter() {
+		Drawable drawable = getResources().getDrawable(R.drawable.ic_lockscreen_handle_pressed);
+		TextPaint textPaint = new TextPaint();
+		textPaint.setColor(getResources().getColor(android.R.color.white));
+		textPaint.setShadowLayer(2.0f, 0, 2.0f, getResources().getColor(android.R.color.black));
+		textPaint.setAntiAlias(true);
+		textPaint.setTextSize(TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, DEFAULT_FONT_SIZE, getResources().getDisplayMetrics()));
+		return new DefaultDrawViewAdapter(this, drawable, textPaint, getListPoints());
+	}
+
+}

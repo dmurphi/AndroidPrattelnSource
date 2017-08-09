@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Pratteln Parking</string>
+    <string name="content_description">Content description</string>
+    <string name="lang">ENG</string>
+    <string name="back">Back</string>
+    <string name="edit">Edit</string>
+    <string name="done">Done</string>
+    <string name="add">Add</string>
+    <string name="my_cars">My Cars</string>
+    <string name="my_profile">My Profile</string>
+    <string name="existing_user">Existing</string>
+    <string name="create_profile">Create Profile</string>
+    <string name="history">Receipts</string>
+    <string name="terms_short">AGB</string>
+    <string name="car">Car:</string>
+    <string name="add_car">Add new Car</string>
+    <string name="edit_profile">Edit your profile:</string>
+    <string name="first_name">first name</string>
+    <string name="last_name">last name</string>
+    <string name="email">e-mail</string>
+    <string name="please_complete">Please complete form correctly</string>
+    <string name="saved_profile">Saved Profile</string>
+    <string name="history_subheader">Select from list your parking dates to get your invoice by email</string>
+    <string name="from">from</string>
+    <string name="to">to</string>
+    <string name="date">date</string>
+    <string name="send">Email</string>
+    <string name="wrong_email">Wrong email</string>
+    <string name="please_check">Please check and try again. Email may already exist.</string>
+    <string name="recover">Recover</string>
+    <string name="email_et">Email: </string>
+    <string name="recover_account">Recover Account</string>
+    <string name="load_more">Load more</string>
+    <string name="no_invoices">No invoices selected</string>
+    <string name="invoice_request">Invoice request sent</string>
+    <string name="invoice_error">Error sending invoice request</string>
+    <string name="select_from_time">Please select from and to time!</string>
+    <string name="my_parked_cars">My Parked Cars</string>
+    <string name="select_from_cars_list">Select from the list the number plate you would like to use</string>
+    <string name="CNP">CNP | car number plate</string>
+    <string name="plus"> + </string>
+    <string name="action_settings">Settings</string>
+    <string name="action_payment">Payment</string>
+    <string name="location_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="location">Location </string>
+    <string name="cancel">Cancel </string>
+    <string name="retry">Retry </string>
+    <string name="yes">Yes </string>
+    <string name="onlyspots">There are only</string>
+    <string name="spots">spots</string>
+    <string name="switzerland"></string>
+    <string name="munster">Pratteln Parking</string>
+    <string name="splash_screen_loading_text">Loading&#8230;</string>
+    <string name="no_internet_connection_title">Connection error</string>
+    <string name="no_internet_connection_body">Make sure you have an internet connection</string>
+    <string name="server_offline_title">Connection error.</string>
+    <string name="server_offline_body">Something went wrong. The server might me offline. Please try again.</string>
+    <string name="parse_error_title">Connection error</string>
+    <string name="parse_error_body">The data from the server is corrupt. Please try again or contact us if the problem persists.</string>
+    <string name="close_app_title">Exit</string>
+    <string name="close_app_body">Are you sure you want to exit ?</string>
+    <string name="close_app_body2">If you create a new parking, you\&apos;ll lose the tracking of the remaining parking time. Do you want to proceed?</string>
+    <string name="main_validation_spot_fail_title">Parking spot error</string>
+    <string name="main_validation_spot_fail_body">Please select a parking spot</string>
+    <string name="main_validation_parking_time_title">Parking time error</string>
+    <string name="main_validation_parking_time_body">The parking time needs to be at least 1 hour</string>
+    <string name="main_validation_parking_time_body2">Minimal extend amount is 1 hour</string>
+    <string name="main_validation_parking_time_body_spot">No car number plate chosen</string>
+    <string name="main_validation_parking_time_body_between">Tax is between 6:00 &#8211; 20:00</string>
+    <string name="title_bar_back">Back</string>
+    <string name="main_start_parking">Start parking</string>
+    <string name="main_free_parking">30 Min. free</string>
+    <string name="time_extend_time">Extend time</string>
+    <string name="time_new_parking">New parking</string>
+    <string name="time_new_parking_save">save</string>
+    <string name="remaining_time">Remaining time</string>
+    <string name="reminder">Reminder</string>
+    <string name="reminder2">Reminder</string>
+    <string name="reminder_info_begin">Set the</string>
+    <string name="reminder_info_middle">minutes</string>
+    <string name="reminder_info_end">you want to be announced before the parking time expires so you have time to extend the parking time or get to your car</string>
+    <string name="terms_conditions">Allgemeine Geschäftsbedingungen</string>
+    <string name="reminder_set_to">Reminder set to</string>
+    <string name="set">set</string>
+    <string name="min">min</string>
+    <string name="min2">min</string>
+    <string name="not2">not</string>
+    <string name="location_header">Location</string>
+    <string name="spot_header">CNP</string>
+    <string name="parking_header">Parking</string>
+    <string name="main_location_sub_header">select location</string>
+    <string name="main_spot_sub_header">car number plate</string>
+    <string name="main_parking_sub_header">Select parking time</string>
+    <string name="main_cost_header">Cost</string>
+    <string name="main_cost_sub_header">Estimated cost</string>
+    <string name="main_footer_extend_parking">Extend parking</string>
+    <string name="main_parking_time_hour_unit">h</string>
+    <string name="main_parking_time_minute_unit">min</string>
+    <string name="select_time">Select Time</string>
+    <string name="select_a_car">Select a car to see its remaining time</string>
+    <string name="add_first_car_notif">Use the + button to add your first car</string>
+    <string name="main_spot_sub_header_hint">Add car</string>
+    <string name="main_location_sub_header_hint">Location</string>
+    <string name="parked"> | parked: </string>
+    <string name="finished"> Parking expired </string>
+    <string name="trans_suc"> Transaction successful </string>
+    <string name="must_create_profile">  You must create a profile before being able to request invoice </string>
+    <string name="cnp_exists">  There already is a car with the same car number plate </string>
+    <string name="firstname_null"> Please enter a first name. </string>
+    <string name="lastname_null"> Please enter a last name. </string>
+    <string name="email_null"> Please enter an email address. </string>
+    <string name="email_invalid"> Please enter an valid email address. </string>
+    <string name="free_time"> Free time: </string>
+    <string name="free_parking"> Free parking from </string>
+    <string name="instructions"> Instructions </string>
+    <string name="show_help"> Will show tutorial next time you start app! </string>
+    <string name="extended_until_parking">Time extended until parking opening hours: </string>
+    <string name="location_picker_done_text">Done</string>
+    <string name="loader_payment_ok">Payment OK</string>
+    <string name="terms_conditions_info"><Data>
+<![CDATA[<br>Geb&#252;hrenpflicht gem&#228ss Standort: Die bezahlte Parkgeb&#252;hr hat nur G&#252;ltigkeit
+	auf dem eingegebenen Standort.<br>
+	<br>
+	30 Minuten kostenlos pro Tag/Standort<br>
+	Die maximale Parkzeit darf nicht &#252;berschritten werden.]]>
+</Data></string>
+    <string name="picker_all_day">All day</string>
+    <string name="freetime_used">Free parking is currently not available!</string>
+    <string name="confirm_new_parking_title">Note</string>
+    <string name="confirm_new_parking_description">The selected car license plate is used. Do you want to start a new process?</string>
+    <string name="confirm_new_parking_positive">Yes</string>
+    <string name="confirm_new_parking_negavive">No</string>
+    <string name="invoices_free_parking">Free</string>
+    
+    <string name="computed_time_limit_title">Parking time limited!</string>
+    <string name="computed_time_limit_message">Your parking time limit is %1$s hours</string>
+
+    <string name="free_parking_duration_in_minutes_toast">zzgl. %1$s min kostenlos</string>
+
+    <string name="load_more_info">loadmore</string>
+
+</resources>

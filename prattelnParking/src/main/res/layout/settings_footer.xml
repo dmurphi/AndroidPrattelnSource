@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/footer"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:background="@color/footer_background"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#d2d2d2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="10dp"
+        android:weightSum="5.1" >
+
+        <Button
+            android:id="@+id/footer_myprofile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/profile"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/my_profile"
+            android:textColor="@color/reusable_footer_text"
+            android:textSize="@dimen/settings_footer_text_size"/>
+
+        <Button
+            android:id="@+id/footer_reminder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_vertical"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/reminder"
+            android:text="@string/reminder"
+            android:textColor="@color/reusable_footer_text"
+            android:textSize="@dimen/settings_footer_text_size"/>
+
+        <Button
+            android:id="@+id/footer_history"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/history"
+            android:text="@string/history"
+            android:textColor="@color/reusable_footer_text"
+            android:textSize="@dimen/settings_footer_text_size"/>
+
+        <Button
+            android:id="@+id/footer_instructions"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_weight="1.1"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/instructions"
+            android:text="@string/instructions"
+            android:textColor="@color/reusable_footer_text"
+            android:textSize="@dimen/settings_footer_text_size"/>
+
+        <Button
+            android:id="@+id/footer_terms"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/terms"
+            android:text="@string/terms_short"
+            android:textColor="@color/reusable_footer_text"
+            android:textSize="@dimen/settings_footer_text_size" />
+    </LinearLayout>
+
+</LinearLayout>

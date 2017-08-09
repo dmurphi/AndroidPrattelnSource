@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_blurry" />
+
+    <TextView
+        android:id="@+id/my_profile_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/history"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/history_subheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/my_profile_header"
+        android:layout_below="@+id/my_profile_header"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/history_subheader"
+        android:textColor="@color/gray"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/from_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/history_subheader"
+        android:layout_below="@+id/history_subheader"
+        android:layout_marginTop="5dp"
+        android:text="@string/from"
+        android:textColor="@color/gray"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/to_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/from_text_view"
+        android:layout_alignBottom="@+id/from_text_view"
+        android:layout_centerHorizontal="true"
+        android:text="@string/to"
+        android:textColor="@color/gray"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/fromButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/from_text_view"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/to_text_view"
+        android:background="@drawable/round_layouts_grey_to_grey2_selector"
+        android:padding="5dp"
+        android:text="@string/from"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/toButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/fromButton"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/fromButton"
+        android:background="@drawable/round_layouts_grey_to_grey2_selector"
+        android:padding="5dp"
+        android:text="@string/to"
+        android:textColor="@color/black" />
+
+    <ListView
+        android:id="@+id/invoice_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/toButton"
+        android:layout_marginTop="15dp"
+        android:background="@color/edit_text_background2"
+        android:divider="@color/gray"
+        android:dividerHeight="1px" >
+    </ListView>
+
+</RelativeLayout>

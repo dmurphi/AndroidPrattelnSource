@@ -1,0 +1,176 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/remaining_time_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_blurry" >
+
+    <!-- TITLE -->
+
+    <include
+        android:id="@+id/time_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/reusable_title_bar" />
+
+    <!-- START NEW PARKING -->
+
+    <RelativeLayout
+        android:id="@+id/time_new_parking"
+        style="@style/footer_bar_container"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true" >
+
+        <View style="@style/line_separator" />
+
+        <TextView
+            android:id="@+id/time_new_parking_tv"
+            style="@style/footer_bar_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_new_parking" />
+    </RelativeLayout>
+
+    <!-- NUMBER PICKERS -->
+
+    <RelativeLayout
+        android:id="@+id/footer_extend_slider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/time_new_parking"
+        android:background="@drawable/rounded_corners_np"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/numberpickerlayout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/numberpicker_tv"
+                style="@style/sub_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="- - : - -"
+                android:textSize="30dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/main_cost_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/numberpickerlayout"
+            android:gravity="center"
+            android:padding="5sp"
+            android:text="@string/main_cost_header"
+            android:textColor="#FFFFFFFF"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <!-- EXTEND TIME -->
+
+    <RelativeLayout
+        android:id="@+id/time_extend_time"
+        style="@style/footer_bar_container"
+        android:layout_above="@id/footer_extend_slider"
+        android:visibility="gone">
+
+        <View style="@style/line_separator" />
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/footer_bar_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_extend_time" />
+
+        <ImageView
+            android:id="@+id/extend_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/textView1"
+            android:src="@drawable/disclosure_arrow" />
+    </RelativeLayout>
+
+    <!-- TIMER -->
+
+    <RelativeLayout
+        android:id="@+id/timeViewLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/time_extend_time"
+        android:layout_below="@id/time_title_bar"
+        android:background="@color/transparent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:paddingLeft="@dimen/content_padding_left"
+            android:paddingRight="@dimen/content_padding_right" >
+
+            <TextView
+                android:id="@+id/remaining_time"
+                style="@style/content_header"
+                android:layout_alignParentTop="true"
+                android:text="@string/remaining_time" />
+
+            <TextView
+                android:id="@+id/car_plate_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/remaining_time"
+                android:layout_below="@+id/remaining_time"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/free_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/remaining_time"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_layouts_transparent_blue"
+                android:padding="10sp"
+                android:text="@string/free_time"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- LOADER -->
+
+    <RelativeLayout
+        android:id="@+id/splash_screen_loader_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="150dp"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <TextView
+            android:id="@+id/loader_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@string/splash_screen_loading_text"
+            android:textColor="@color/splash_screen_loader_text" />
+
+        <ProgressBar
+            android:id="@+id/QuoteOfTheDayProgressBar"
+            style="@android:style/Widget.ProgressBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loader_text"
+            android:layout_centerHorizontal="true"
+            android:indeterminate="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/reusable_title_background"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/reusable_title_back_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/button_back_selector"
+        android:drawableLeft="@drawable/title_back_arrow_icon"
+        android:drawablePadding="5dp"
+        android:text="@string/title_bar_back"
+        android:gravity="center_vertical"
+        android:textColor="@color/reusable_title_text"
+        android:textSize="@dimen/title_tv_size"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/reusable_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/title_tv_size"
+        android:textColor="@color/reusable_title_text"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/reusable_title_settings"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/content_description"
+        android:src="@drawable/settings_selector" />
+
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_blurry" />
+
+    <RelativeLayout
+        android:id="@+id/reminder_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/content_padding_left"
+        android:paddingRight="@dimen/content_padding_right">
+
+        <TextView
+            android:id="@+id/reminder_header"
+            style="@style/content_header"
+            android:layout_alignParentTop="true"
+            android:text="@string/reminder" />
+
+        <WebView
+            android:id="@+id/reminder_info"
+            style="@style/reminder_info"
+            android:layout_below="@id/reminder_header" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/beeds_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reminder_container"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <LinearLayout
+            android:id="@+id/reminder_beeds_container"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shape_horizontal_line"
+            android:orientation="horizontal"
+            android:weightSum="11.5">
+
+            <Button
+                android:id="@+id/beed_10"
+                style="@style/reminder_beeds"
+                android:background="@drawable/shape_circle_left"
+                android:text="10" />
+
+            <View style="@style/reminder_line" />
+
+            <Button
+                android:id="@+id/beed_15"
+                style="@style/reminder_beeds"
+                android:background="@drawable/shape_circle"
+                android:text="15" />
+
+            <View style="@style/reminder_line" />
+
+            <Button
+                android:id="@+id/beed_20"
+                style="@style/reminder_beeds"
+                android:background="@drawable/shape_circle"
+                android:text="20" />
+
+            <View style="@style/reminder_line" />
+
+            <Button
+                android:id="@+id/beed_25"
+                style="@style/reminder_beeds"
+                android:background="@drawable/shape_circle"
+                android:text="25" />
+
+            <View style="@style/reminder_line" />
+
+            <Button
+                android:id="@+id/beed_30"
+                style="@style/reminder_beeds"
+                android:background="@drawable/shape_circle_right"
+                android:text="30" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Switch
+        android:id="@+id/reminder_on_off_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOff="OFF"
+        android:textOn="ON"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_below="@+id/beeds_container"
+        android:paddingLeft="30dp" />
+
+
+</RelativeLayout>

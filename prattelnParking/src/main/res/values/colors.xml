@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="reusable_title_background">#ffffff00</color>
+    <color name="footer_background">#ffffff00</color>
+    <color name="footer_button_pressed">#b2b200</color>
+    <color name="footer_background2">#66ffff00</color>
+    <color name="footer_background_grey">#66C0C0C0</color>
+    <color name="splash_screen_loader_text">#ffffff</color>
+    <color name="reusable_title_text">#000000</color>
+    <color name="reusable_footer_text">#000000</color>
+    <color name="edit_text_background">#bbd2d1c4</color>
+    <color name="edit_text_background2">#88d2d1c4</color>
+    <color name="edit_text_text">#343432</color>
+    <color name="reminder_info_text">#505050</color>
+    <color name="sub_header_text">#343432</color>
+    <color name="content_header">#000000</color>
+    <color name="cost_value">#000000</color>
+    <color name="beed_selected_text">#000000</color>
+    <color name="beed_not_selected_text">#ffffff</color>
+    <color name="beed_selected_circle">#ffffff</color>
+    <color name="beed_not_selected_circle">#568095</color>
+    <color name="beed_circle_line">#568095</color>
+    <color name="beed_border">#66dddddd</color>
+    <color name="timer_clock">#88e3534d</color>
+    <color name="gray">#505050</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="blue">#ff5e8da7</color>
+    <color name="blue_transparent">#665e8da7</color>
+	<color name="free_parking_bg_green">#9AFF9A</color>
+</resources>

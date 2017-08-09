@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">10dp</dimen>
+    <dimen name="activity_vertical_margin">10dp</dimen>
+
+    <!-- MAIN -->
+    <dimen name="content_padding_left">30dp</dimen>
+    <dimen name="content_padding_right">30dp</dimen>
+    <dimen name="content_header_size">20sp</dimen>
+    <dimen name="reminder_info_size">12sp</dimen>
+    <dimen name="reminder_info_padding_top">5dp</dimen>
+    <dimen name="reminder_info_padding_bottom">5dp</dimen>
+    <dimen name="sub_header_text">13sp</dimen>
+    <dimen name="cost_text">25sp</dimen>
+    <dimen name="spinner_tv_size">20sp</dimen>
+    <dimen name="custom_number_picker_text_size">16sp</dimen>
+
+    <!-- REMINDER BEEDS -->
+    <dimen name="beeds_border">5dp</dimen>
+    <dimen name="line_padding">13dp</dimen>
+    <!-- This should be double the line_padding above -->
+    <dimen name="layout_line_padding_left_right">26dp</dimen>
+
+    <!-- FOOTER -->
+    <dimen name="footer_padding">5dp</dimen>
+    <dimen name="footer_text_size">14sp</dimen>
+    <dimen name="settings_footer_text_size">11sp</dimen>
+
+    <!-- REUSABLE TITLE -->
+    <dimen name="title_tv_size">14sp</dimen>
+    <dimen name="title_tv_padding">2dp</dimen>
+
+</resources>

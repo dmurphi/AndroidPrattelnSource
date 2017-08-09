@@ -1,0 +1,116 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="android:Theme.Light"></style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="footer_bar_container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/footer_background</item>
+    </style>
+
+    <style name="footer_bar_tv">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:padding">@dimen/footer_padding</item>
+        <item name="android:textColor">@color/reusable_footer_text</item>
+        <item name="android:textSize">@dimen/footer_text_size</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="reminder_beeds">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1.5</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="reminder_line">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="line_separator">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">@drawable/line</item>
+    </style>
+
+    <style name="main_line_separator_container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="content_header">
+        <item name="android:textColor">@color/content_header</item>
+        <item name="android:textSize">@dimen/content_header_size</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="reminder_info">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/reminder_info_padding_top</item>
+        <item name="android:paddingBottom">@dimen/reminder_info_padding_bottom</item>
+    </style>
+
+    <style name="sub_header">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/sub_header_text</item>
+        <item name="android:textColor">@color/sub_header_text</item>
+    </style>
+
+    <style name="cost_value">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/cost_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/cost_value</item>
+    </style>
+
+    <style name="custom_number_picker" parent="@style/SampleTheme">
+        <item name="selectionDivider">@android:color/transparent</item>
+        <item name="internalLayout">@layout/custom_number_picker_with_selector_wheel</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginBottom">3dp</item>
+    </style>
+
+    <style name="parking_time_vertical_separator">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">1dp</item>
+    </style>
+
+    <style name="parking_time_selector_unit_measures_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/edit_text_text</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="extend_time_custom_number_picker" parent="@style/custom_number_picker">
+        <item name="internalLayout">@layout/extend_time_custom_number_picker_with_selector_wheel</item>
+    </style>
+
+    <style name="extend_time_time_unit_measures" parent="@style/parking_time_selector_unit_measures_tv">
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="extend_time_time_vertical_separator" parent="@style/parking_time_vertical_separator">
+        <item name="android:layout_width">5dp</item>
+    </style>
+
+</resources>

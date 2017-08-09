@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+        
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_blurry" />
+    
+     <RelativeLayout
+        android:id="@+id/terms_conditions_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <TextView
+            android:id="@+id/terms_conditions_header"
+            style="@style/content_header"
+            android:layout_alignParentTop="true"
+            android:text="@string/terms_conditions" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/terms_conditions_header" >
+
+            <WebView
+                android:id="@+id/terms_conditions_info"
+                style="@style/reminder_info" />
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

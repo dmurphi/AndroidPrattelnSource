@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_blurry" />
+
+    <TextView
+        android:id="@+id/my_profile_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/my_profile"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/edit_profile_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/my_profile_header"
+        android:layout_below="@+id/my_profile_header"
+        android:text="@string/edit_profile"
+        android:textColor="@color/gray"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/first_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit_profile_text"
+        android:layout_below="@+id/edit_profile_text"
+        android:layout_marginTop="15dp"
+        android:text="@string/first_name"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/first_name_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/first_name_text_view"
+        android:layout_below="@+id/first_name_text_view"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:singleLine="true"
+        android:textColor="@color/black" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/last_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/first_name_edit_text"
+        android:layout_below="@+id/first_name_edit_text"
+        android:layout_marginTop="8dp"
+        android:text="@string/last_name"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/last_name_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/last_name_text_view"
+        android:layout_below="@+id/last_name_text_view"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:singleLine="true"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/email_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/last_name_edit_text"
+        android:layout_below="@+id/last_name_edit_text"
+        android:layout_marginTop="8dp"
+        android:text="@string/email"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/email_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/email_text_view"
+        android:layout_below="@+id/email_text_view"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/existingUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/first_name_text_view"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/my_profile_header"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/round_layouts_grey_to_grey2_selector"
+        android:drawableTop="@drawable/ic_user_photo"
+        android:padding="5dp"
+        android:text="@string/existing_user"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+</RelativeLayout>

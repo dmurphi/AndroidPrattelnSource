@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:bottom="@dimen/beeds_border"
+        android:left="@dimen/layout_line_padding_left_right"
+        android:right="@dimen/layout_line_padding_left_right"
+        android:top="@dimen/beeds_border">
+        <shape
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle" >
+            <solid android:color="@color/beed_border" />
+        </shape>
+    </item>
+    <item
+        android:bottom="@dimen/line_padding"
+        android:left="@dimen/line_padding"
+        android:right="@dimen/line_padding"
+        android:top="@dimen/line_padding">
+        <shape
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle" >
+            <solid android:color="@color/beed_circle_line" />
+        </shape>
+    </item>
+
+</layer-list>

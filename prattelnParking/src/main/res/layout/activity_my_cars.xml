@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/reusable_title_background" >
+
+        <TextView
+            android:id="@+id/back_my_cars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:padding="10dp"
+            android:text="@string/back"
+            android:textColor="@color/reusable_title_text" />
+
+        <TextView
+            android:id="@+id/my_cars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/my_cars"
+            android:textColor="@color/reusable_title_text" />
+
+        <TextView
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/back_my_cars"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:text="@string/plus"
+            android:textColor="@color/reusable_title_text"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:background="@drawable/background_blurry" >
+
+        <RelativeLayout
+            android:id="@+id/second_header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/footer_background2" >
+
+            <TextView
+                android:id="@+id/select_from_cars_list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_centerInParent="true"
+                android:padding="5sp"
+                android:text="@string/select_from_cars_list"
+                android:textColor="@color/gray" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/cars_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/second_header"
+            android:layout_centerHorizontal="true" >
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>

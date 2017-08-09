@@ -1,0 +1,300 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- BACKGROUND -->
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/content_description"
+        android:src="@drawable/background_blurry" />
+
+    <!-- HEADER -->
+
+    <include
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/reusable_title_bar" />
+
+    <!-- FOOTER -->
+
+    <RelativeLayout
+        android:id="@+id/footer_bar"
+        style="@style/footer_bar_container"
+        android:layout_alignParentBottom="true" >
+
+        <View style="@style/line_separator" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/footer_text_start_free_parking"
+                style="@style/footer_bar_tv"
+                android:layout_weight="1"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:background="@drawable/button_free_parking_selector"
+                android:drawableRight="@drawable/start_parking_icon"
+                android:text="@string/main_free_parking" />
+            
+            <TextView
+                android:id="@+id/footer_text_start_parking"
+                android:layout_weight="1"
+                style="@style/footer_bar_tv"
+                android:gravity="center"
+                android:drawablePadding="10dp"
+                android:background="@drawable/button_free_parking_selector"
+                android:drawableRight="@drawable/start_parking_icon"
+                android:text="@string/main_start_parking" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- MIDDLE PORTION -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/footer_bar"
+        android:layout_below="@id/title_bar"
+        android:orientation="vertical"
+        android:weightSum="24" >
+
+        <TextView
+            android:id="@+id/main_reminder"
+            style="@style/sub_header"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <RelativeLayout style="@style/main_line_separator_container" >
+
+            <View
+                android:id="@+id/separator_top"
+                style="@style/line_separator" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_location"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:paddingLeft="@dimen/content_padding_left"
+            android:paddingRight="@dimen/content_padding_right" >
+
+            <TextView
+                android:id="@+id/main_location_header"
+                style="@style/content_header"
+                android:layout_alignParentTop="true"
+                android:text="@string/location_header" />
+
+            <TextView
+                android:id="@+id/main_location_sub_header"
+                style="@style/sub_header"
+                android:layout_below="@id/main_location_header"
+                android:text="@string/main_location_sub_header" />
+
+            <TextView
+                android:id="@+id/location_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/main_location_sub_header"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_corners"
+                android:gravity="center"
+                android:hint="@string/main_location_sub_header_hint"
+                android:padding="2dp"
+                android:textColor="@color/edit_text_text" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/main_line_separator_container" >
+
+            <View
+                android:id="@+id/separator_location"
+                style="@style/line_separator" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_spot"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:paddingLeft="@dimen/content_padding_left"
+            android:paddingRight="@dimen/content_padding_right" >
+
+            <TextView
+                android:id="@+id/main_spot_header"
+                style="@style/content_header"
+                android:layout_alignParentTop="true"
+                android:text="@string/spot_header" />
+
+            <TextView
+                android:id="@+id/main_spot_sub_header"
+                style="@style/sub_header"
+                android:layout_below="@id/main_spot_header"
+                android:text="@string/main_spot_sub_header" />
+
+            <TextView
+                android:id="@+id/car_plate_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/main_spot_sub_header"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_corners"
+                android:gravity="center"
+                android:hint="@string/main_spot_sub_header_hint"
+                android:padding="2dp"
+                android:textColor="@color/edit_text_text" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/main_line_separator_container" >
+
+            <View
+                android:id="@+id/separator_bottom"
+                style="@style/line_separator" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_parking"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:paddingLeft="@dimen/content_padding_left"
+            android:paddingRight="@dimen/content_padding_right" >
+
+            <TextView
+                android:id="@+id/main_parking_header"
+                style="@style/content_header"
+                android:layout_alignParentTop="true"
+                android:text="@string/parking_header" />
+
+            <TextView
+                android:id="@+id/main_parking_sub_header"
+                style="@style/sub_header"
+                android:layout_below="@id/main_parking_header"
+                android:text="@string/main_parking_sub_header" />
+
+            <TextView
+                android:id="@+id/free_parking_time_notif"
+                style="@style/sub_header"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/main_parking_number_picker"
+                style="@style/content_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/free_parking_time_notif"
+                android:layout_below="@id/main_parking_sub_header"
+                android:background="@drawable/rounded_corners"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/numberpicker_tv"
+                    style="@style/sub_header"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="- - : - -"
+                    android:textSize="@dimen/cost_text" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_cost"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:paddingLeft="@dimen/content_padding_left"
+            android:paddingRight="@dimen/content_padding_right" >
+
+            <TextView
+                android:id="@+id/main_cost_header"
+                style="@style/content_header"
+                android:text="@string/main_cost_header" />
+
+            <TextView
+                android:id="@+id/main_cost_sub_header"
+                style="@style/sub_header"
+                android:layout_below="@id/main_cost_header"
+                android:text="@string/main_cost_sub_header"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/main_cost_value"
+                style="@style/cost_value"
+                android:layout_toRightOf="@id/main_cost_header"
+                android:gravity="right" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- LOADER -->
+
+    <RelativeLayout
+        android:id="@+id/splash_screen_loader_container"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <TextView
+            android:id="@+id/loader_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@string/splash_screen_loading_text"
+            android:textColor="@color/splash_screen_loader_text" />
+
+        <ProgressBar
+            android:id="@+id/QuoteOfTheDayProgressBar"
+            style="@android:style/Widget.ProgressBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loader_text"
+            android:layout_centerHorizontal="true"
+            android:indeterminate="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/picker_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/picker_done_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:padding="5dp"
+            android:text="@string/location_picker_done_text"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.cityparking.pratteln.picker.WheelView
+            android:id="@+id/bay_wheel_picker"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/picker_done_tv" />
+    </RelativeLayout>
+
+</RelativeLayout>
